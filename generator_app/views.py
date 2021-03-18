@@ -20,5 +20,5 @@ def password(request):
             myPassword += random.choice(characters)
     return render(request, 'generator_app/password.html', {"password":myPassword})
 
-def home(request):
+def about(request):
     return render(request, 'generator_app/about.html')
